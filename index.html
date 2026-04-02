@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta Tags Esenciales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetCare Clínica Veterinaria - Cuidado profesional y compasivo para tus mascotas. Servicios de medicina preventiva, cirugía y emergencias 24/7.">
+    <meta name="keywords" content="veterinaria, clínica veterinaria, cuidado mascotas, medicina veterinaria">
+    <meta name="author" content="PetCare Veterinary Clinic">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph para Redes Sociales -->
+    <meta property="og:title" content="PetCare - Clínica Veterinaria de Confianza">
+    <meta property="og:description" content="Especialistas en cuidado integral de mascotas. Atención 24/7">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>🐾</text></svg>">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>PetCare - Clínica Veterinaria Profesional</title>
+</head>
+
+<body>
+    <!-- Pie de estructura principal: aquí comienza el contenido visible de la página -->
+    <!-- El <header> (arriba) muestra la cabecera fija con navegación y CTA -->
+    <!-- El <main> contiene las secciones de presentación de la clínica -->
+
+    <!-- ========== HEADER / NAVEGACIÓN ========== -->
+    <header class="header" role="banner">
+        <div class="header__container">
+            <!-- Logo -->
+            <div class="header__logo">
+                <a href="#" class="logo" aria-label="PetCare - Ir a inicio">
+                    <!-- Logo SVG personalizado creado en línea -->
+                    <svg class="logo__image" width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo PetCare">
+                        <rect width="64" height="64" rx="14" fill="#0f4c81"/>
+                        <path d="M46 18c-4 0-7 3-7 7 0 0 .1 2 .5 3.5 1.7 8.8-4.7 15.3-9.4 16.9-1.8.6-3.7.6-5.6 0-4.7-1.6-11-8-9.4-16.9.4-1.5.5-3.5.5-3.5 0-4-3-7-7-7s-7 3-7 7c0 1.8.8 5.1 1.9 7.8 1.7 4.7 5.5 9.5 10.2 13.6 3.2 2.7 6.8 4.8 9.7 5.8 2.9-1 6.5-3.1 9.7-5.8 4.7-4.1 8.4-8.9 10.2-13.6 1.1-2.7 1.9-6 1.9-7.8 0-4-3-7-7-7z" fill="#f9fafb"/>
+                    </svg>
+                    <span class="logo__text">PetCare</span>
+                </a>
+            </div>
+
+            <!-- Navegación Principal -->
+            <nav class="nav" aria-label="Navegación principal">
+                <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="nav__toggle-icon"></span>
+                    <span class="sr-only">Abrir menú de navegación</span>
+                </button>
+                
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="#servicios" class="nav__link">Servicios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#equipo" class="nav__link">Equipo</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#razas" class="nav__link">Razas</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#galeria" class="nav__link">Galería</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#promociones" class="nav__link">Ofertas</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faq" class="nav__link">Preguntas</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonios" class="nav__link">Testimonios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- CTA Header -->
+            <div class="header__cta">
+                <a href="#contacto" class="btn btn--primary" aria-label="Agendar cita veterinaria">
+                    Agendar Cita
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <section class="hero" aria-label="Sección principal - Bienvenida">
+            <div class="hero__content">
+                <!-- H1: Único y estratégico en la página -->
+                <h1 class="hero__title">
+                    Tu mascota merece lo mejor
+                </h1>
+                
+                <p class="hero__subtitle">
+                    Medicina veterinaria de excelencia, con atención compasiva y tecnología moderna
+                </p>
+
+                <!-- AIDA: CTA orientado a acción inmediata -->
+                <div class="hero__cta">
+                    <a href="#contacto" class="btn btn--primary btn--large" aria-label="Agendar consulta veterinaria ahora">
+                        Agendar Consulta Hoy
+                    </a>
+                    <a href="#servicios" class="btn btn--secondary btn--large" aria-label="Conocer nuestros servicios">
+                        Conocer Servicios
+                    </a>
+                </div>
+
+                <!-- Beneficios rápidos -->
+                <ul class="hero__benefits">
+                    <li class="hero__benefit">✓ Atención 24/7</li>
+                    <li class="hero__benefit">✓ Equipo especializado</li>
+                    <li class="hero__benefit">✓ Tecnología avanzada</li>
+                </ul>
+
+                <!-- Animaciones con mascotas -->
+                <div class="hero__animales" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=200&q=80" alt="Perro" class="hero__animal-img" />
+                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=200&q=80" alt="Gato" class="hero__animal-img" />
+                    <img src="https://images.unsplash.com/photo-1568572933382-74d440642117?auto=format&fit=crop&w=200&q=80" alt="Animal exótico" class="hero__animal-img" />
+                </div>
+            </div>
+
+            <!-- Hero Background -->
+            <div class="hero__visual" aria-hidden="true">
+                <div class="hero__shape hero__shape--1"></div>
+                <div class="hero__shape hero__shape--2"></div>
+            </div>
+        </section>
+
+        <!-- ========== SERVICIOS SECTION ========== -->
+        <section id="servicios" class="services" aria-labelledby="servicios-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="servicios-title" class="section-header__title">Nuestros Servicios</h2>
+                    <p class="section-header__subtitle">
+                        Ofrecemos una gama completa de servicios veterinarios para garantizar la salud integral de tu mascota
+                    </p>
+                </header>
+
+                <!-- Grid de Servicios -->
+                <div class="services__grid">
+                    <!-- Servicio 1: Medicina General -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">🏥</div>
+                        <h3 class="service-card__title">Medicina General</h3>
+                        <p class="service-card__description">
+                            Consultas preventivas, diagnósticos y tratamiento de enfermedades comunes
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Revisiones periódicas</li>
+                            <li>Análisis de laboratorio</li>
+                            <li>Prescripción de medicamentos</li>
+                        </ul>
+                    </article>
+
+                    <!-- Servicio 2: Cirugía -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">🔬</div>
+                        <h3 class="service-card__title">Cirugía Veterinaria</h3>
+                        <p class="service-card__description">
+                            Procedimientos quirúrgicos con anestesia segura y recuperación supervisada
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Esterilización/Castración</li>
+                            <li>Cirugía de urgencia</li>
+                            <li>Procedimientos especializados</li>
+                        </ul>
+                    </article>
+
+                    <!-- Servicio 3: Odontología -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">🦷</div>
+                        <h3 class="service-card__title">Odontología Veterinaria</h3>
+                        <p class="service-card__description">
+                            Limpieza dental profesional y tratamiento de problemas bucales
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Limpiezas profesionales</li>
+                            <li>Extracciones dentales</li>
+                            <li>Tratamiento de caries</li>
+                        </ul>
+                    </article>
+
+                    <!-- Servicio 4: Emergencias -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">🚑</div>
+                        <h3 class="service-card__title">Emergencias 24/7</h3>
+                        <p class="service-card__description">
+                            Atención de urgencia disponible las 24 horas, los 7 días de la semana
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Atención inmediata</li>
+                            <li>Equipo especializado</li>
+                            <li>Cuidados intensivos</li>
+                        </ul>
+                    </article>
+
+                    <!-- Servicio 5: Grooming -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">✂️</div>
+                        <h3 class="service-card__title">Grooming Profesional</h3>
+                        <p class="service-card__description">
+                            Baño, corte y cuidado estético profesional para tu mascota
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Baños relajantes</li>
+                            <li>Cortes de raza</li>
+                            <li>Cuidado de uñas</li>
+                        </ul>
+                    </article>
+
+                    <!-- Servicio 6: Vacunación -->
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">💉</div>
+                        <h3 class="service-card__title">Vacunación Integral</h3>
+                        <p class="service-card__description">
+                            Programas de vacunación personalizados según la edad y necesidades
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Calendario vaccinal</li>
+                            <li>Refuerzos anuales</li>
+                            <li>Certificados internacionales</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EQUIPO SECTION ========== -->
+        <section id="equipo" class="team" aria-labelledby="equipo-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="equipo-title" class="section-header__title">Nuestro Equipo de Expertos</h2>
+                    <p class="section-header__subtitle">
+                        Profesionales apasionados por el cuidado animal con años de experiencia
+                    </p>
+                </header>
+
+                <div class="team__grid">
+                    <!-- Miembro 1 -->
+                    <article class="team-member">
+                        <div class="team-member__image" aria-hidden="true">👨‍⚕️</div>
+                        <h3 class="team-member__name">Dr. Benjamin Figueroa</h3>
+                        <p class="team-member__title">Médico Veterinario General</p>
+                        <p class="team-member__bio">
+                            15 años de experiencia en medicina preventiva y diagnóstico clínico
+                        </p>
+                    </article>
+
+                    <!-- Miembro 2 -->
+                    <article class="team-member">
+                        <div class="team-member__image" aria-hidden="true">👩‍⚕️</div>
+                        <h3 class="team-member__name">Dra. Sofía Aravena</h3>
+                        <p class="team-member__title">Especialista en Cirugía</p>
+                        <p class="team-member__bio">
+                            12 años especializándose en procedimientos quirúrgicos avanzados
+                        </p>
+                    </article>
+
+                    <!-- Miembro 3 -->
+                    <article class="team-member">
+                        <div class="team-member__image" aria-hidden="true">👨‍⚕️</div>
+                        <h3 class="team-member__name">Dr. Paolo Ferrada</h3>
+                        <p class="team-member__title">Odontólogo Veterinario</p>
+                        <p class="team-member__bio">
+                            10 años cuidando la salud bucal de mascotas con pasión
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== RAZAS RECOMENDADAS SECTION ========== -->
+        <section id="razas" class="breeds" aria-labelledby="razas-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="razas-title" class="section-header__title">Razas de Mascotas</h2>
+                    <p class="section-header__subtitle">
+                        Guía de razas populares de perros, gatos y animales exóticos para ayudarte a elegir y a conocer mejor a tu compañero.
+                    </p>
+                </header>
+
+                <div class="breeds__grid">
+                    <article class="breed-category">
+                        <h3 class="breed-category__title">Perros</h3>
+                        <ul class="breed-list">
+                            <li>Labrador Retriever</li>
+                            <li>Golden Retriever</li>
+                            <li>Pastor Alemán</li>
+                            <li>Buldog Francés</li>
+                            <li>Beagle</li>
+                            <li>Shih Tzu</li>
+                            <li>Husky Siberiano</li>
+                            <li>Pitbull</li>
+                            <li>Chihuahua</li>
+                        </ul>
+                    </article>
+
+                    <article class="breed-category">
+                        <h3 class="breed-category__title">Gatos</h3>
+                        <ul class="breed-list">
+                            <li>Gato Persa</li>
+                            <li>Gato Siamés</li>
+                            <li>Gato Maine Coon</li>
+                            <li>Gato Ragdoll</li>
+                            <li>Gato Sphynx</li>
+                            <li>Gato Bengalí</li>
+                            <li>Gato Azul Ruso</li>
+                            <li>Gato Británico de Pelo Corto</li>
+                            <li>Gato Sagrado de Birmania</li>
+                        </ul>
+                    </article>
+
+                    <article class="breed-category">
+                        <h3 class="breed-category__title">Animales Exóticos</h3>
+                        <ul class="breed-list">
+                            <li>Ave: Guacamayo</li>
+                            <li>Ave: Periquito</li>
+                            <li>Roedor: Erizo</li>
+                            <li>Roedor: Conejillo de Indias</li>
+                            <li>Reptil: Iguana</li>
+                            <li>Reptil: Tortuga</li>
+                            <li>Anfibio: Rana Dardo</li>
+                            <li>Pequeño mamífero: Chinchilla</li>
+                            <li>Pequeño mamífero: Hurón</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TESTIMONIOS SECTION ========== -->
+        <section id="testimonios" class="testimonials" aria-labelledby="testimonios-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="testimonios-title" class="section-header__title">Lo que Dicen Nuestros Clientes</h2>
+                    <p class="section-header__subtitle">
+                        Historias reales de mascotas que mejoraron con nuestro cuidado
+                    </p>
+                </header>
+
+                <div class="testimonials__grid">
+                    <!-- Testimonio 1 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-card__rating" aria-label="Calificación: 5 de 5 estrellas">
+                            ★★★★★
+                        </div>
+                        <p class="testimonial-card__text">
+                            "El Doctor Figueroa fue increíble. Mi perro Max tuvo una emergencia a las 2 AM y lo atendió sin dudarlo. Profesional, compasivo y excelente diagnóstico."
+                        </p>
+                        <footer class="testimonial-card__footer">
+                            <strong>Maria González</strong>
+                            <span class="testimonial-card__pet">Dueña de Max (Golden Retriever)</span>
+                        </footer>
+                    </article>
+
+                    <!-- Testimonio 2 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-card__rating" aria-label="Calificación: 5 de 5 estrellas">
+                            ★★★★★
+                        </div>
+                        <p class="testimonial-card__text">
+                            "Llevaba años buscando un veterinario de confianza. El Doctor Figueroa realizó la cirugía de mi gato con maestría y dedicación. ¡Totalmente recomendado!"
+                        </p>
+                        <footer class="testimonial-card__footer">
+                            <strong>Roberto Fernández</strong>
+                            <span class="testimonial-card__pet">Dueño de Michi (Gato Persa)</span>
+                        </footer>
+                    </article>
+
+                    <!-- Testimonio 3 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-card__rating" aria-label="Calificación: 5 de 5 estrellas">
+                            ★★★★★
+                        </div>
+                        <p class="testimonial-card__text">
+                            "El Doctor Figueroa y su equipo ofrecen un servicio excepcional. Mi cachorra siempre sale feliz y radiante. Personal muy amable, atento y profesional."
+                        </p>
+                        <footer class="testimonial-card__footer">
+                            <strong>Ana Martínez</strong>
+                            <span class="testimonial-card__pet">Dueña de Bella (Labrador)</span>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== GALERÍA DE FOTOS SECTION ========== -->
+        <section id="galeria" class="gallery" aria-labelledby="galeria-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="galeria-title" class="section-header__title">Nuestra Galería</h2>
+                    <p class="section-header__subtitle">
+                        Momentos capturados en nuestra clínica: mascotas felices, tratamientos y nuestro equipo en acción
+                    </p>
+                </header>
+
+                <div class="gallery__grid">
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=400&q=80" alt="Perro en consulta veterinaria" class="gallery__image" />
+                        <figcaption class="gallery__caption">Consulta rutinaria</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=400&q=80" alt="Gato siendo atendido" class="gallery__image" />
+                        <figcaption class="gallery__caption">Atención especializada</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=400&q=80" alt="Equipo veterinario trabajando" class="gallery__image" />
+                        <figcaption class="gallery__caption">Nuestro equipo</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=400&q=80" alt="Mascota recuperándose" class="gallery__image" />
+                        <figcaption class="gallery__caption">Recuperación exitosa</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=400&q=80" alt="Instalaciones modernas" class="gallery__image" />
+                        <figcaption class="gallery__caption">Nuestras instalaciones</figcaption>
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?auto=format&fit=crop&w=400&q=80" alt="Cirugía veterinaria" class="gallery__image" />
+                        <figcaption class="gallery__caption">Procedimientos avanzados</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== BLOG DE CONSEJOS SECTION ========== -->
+        <section id="blog" class="blog" aria-labelledby="blog-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="blog-title" class="section-header__title">Blog de Consejos</h2>
+                    <p class="section-header__subtitle">
+                        Artículos expertos sobre cuidado de mascotas, salud preventiva y bienestar animal
+                    </p>
+                </header>
+
+                <div class="blog__grid">
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&w=400&q=80" alt="Alimentación saludable para mascotas" />
+                        </div>
+                        <div class="blog-card__content">
+                            <h3 class="blog-card__title">Alimentación Saludable para tu Mascota</h3>
+                            <p class="blog-card__excerpt">Descubre cómo elegir la dieta ideal según la edad, raza y condición de tu compañero peludo...</p>
+                            <a href="#" class="blog-card__link">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=400&q=80" alt="Importancia de la vacunación" />
+                        </div>
+                        <div class="blog-card__content">
+                            <h3 class="blog-card__title">Por qué la Vacunación es Esencial</h3>
+                            <p class="blog-card__excerpt">Conoce el calendario de vacunas recomendado y cómo protege a tu mascota de enfermedades graves...</p>
+                            <a href="#" class="blog-card__link">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=400&q=80" alt="Ejercicio diario para perros" />
+                        </div>
+                        <div class="blog-card__content">
+                            <h3 class="blog-card__title">Ejercicio Diario: Clave para la Salud</h3>
+                            <p class="blog-card__excerpt">Aprende cuánto ejercicio necesita tu perro según su raza y edad para mantenerlo feliz y saludable...</p>
+                            <a href="#" class="blog-card__link">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CERTIFICACIONES SECTION ========== -->
+        <section id="certificaciones" class="certifications" aria-labelledby="certificaciones-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="certificaciones-title" class="section-header__title">Certificaciones y Premios</h2>
+                    <p class="section-header__subtitle">
+                        Reconocimientos que avalan nuestra excelencia en cuidado veterinario
+                    </p>
+                </header>
+
+                <div class="certifications__grid">
+                    <div class="certification-item">
+                        <div class="certification-item__icon">🏆</div>
+                        <h3 class="certification-item__title">Premio Excelencia 2023</h3>
+                        <p class="certification-item__description">Reconocimiento nacional por calidad en servicios veterinarios</p>
+                    </div>
+                    <div class="certification-item">
+                        <div class="certification-item__icon">📜</div>
+                        <h3 class="certification-item__title">Certificación ISO 9001</h3>
+                        <p class="certification-item__description">Sistema de gestión de calidad certificado internacionalmente</p>
+                    </div>
+                    <div class="certification-item">
+                        <div class="certification-item__icon">🎓</div>
+                        <h3 class="certification-item__title">Especialistas Certificados</h3>
+                        <p class="certification-item__description">Todo nuestro equipo cuenta con certificaciones actualizadas</p>
+                    </div>
+                    <div class="certification-item">
+                        <div class="certification-item__icon">🌟</div>
+                        <h3 class="certification-item__title">Mejor Clínica Local 2024</h3>
+                        <p class="certification-item__description">Votado por la comunidad como el mejor servicio veterinario</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROMOCIONES SECTION ========== -->
+        <section id="promociones" class="promos" aria-labelledby="promos-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="promos-title" class="section-header__title">Ofertas Especiales</h2>
+                    <p class="section-header__subtitle">
+                        Aprovecha nuestras promociones y cuida a tu mascota con descuentos
+                    </p>
+                </header>
+
+                <div class="promos__grid">
+                    <!-- Promo 1 -->
+                    <article class="promo-card">
+                        <div class="promo-card__badge">-20%</div>
+                        <h3 class="promo-card__title">Primera Consulta</h3>
+                        <p class="promo-card__description">
+                            Descuento especial en tu primera visita veterinaria
+                        </p>
+                        <button class="btn btn--secondary promo-card__cta" data-modal="promo1">
+                            Ver Detalles
+                        </button>
+                    </article>
+
+                    <!-- Promo 2 -->
+                    <article class="promo-card">
+                        <div class="promo-card__badge">-15%</div>
+                        <h3 class="promo-card__title">Paquete Vacunación</h3>
+                        <p class="promo-card__description">
+                            Descuento en calendario completo de vacunas
+                        </p>
+                        <button class="btn btn--secondary promo-card__cta" data-modal="promo2">
+                            Ver Detalles
+                        </button>
+                    </article>
+
+                    <!-- Promo 3 -->
+                    <article class="promo-card">
+                        <div class="promo-card__badge">-25%</div>
+                        <h3 class="promo-card__title">Grooming Mensual</h3>
+                        <p class="promo-card__description">
+                            Membresía con descuentos en servicios de estética
+                        </p>
+                        <button class="btn btn--secondary promo-card__cta" data-modal="promo3">
+                            Ver Detalles
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONSEJOS SECTION ========== -->
+        <section id="consejos" class="tips" aria-labelledby="consejos-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="consejos-title" class="section-header__title">Consejos para tu Mascota</h2>
+                    <p class="section-header__subtitle">
+                        Aprende cómo cuidar mejor a tu compañero felino
+                    </p>
+                </header>
+
+                <div class="tips__grid">
+                    <!-- Consejo 1 -->
+                    <article class="tip-card">
+                        <div class="tip-card__icon">🦴</div>
+                        <h3 class="tip-card__title">Nutrición Adecuada</h3>
+                        <p class="tip-card__preview">
+                            Una buena alimentación es fundamental para la salud de tu mascota...
+                        </p>
+                        <button class="btn btn--outline btn--small tip-card__expand" data-tip="tip1">
+                            Leer Más
+                        </button>
+                    </article>
+
+                    <!-- Consejo 2 -->
+                    <article class="tip-card">
+                        <div class="tip-card__icon">🏃</div>
+                        <h3 class="tip-card__title">Ejercicio Diario</h3>
+                        <p class="tip-card__preview">
+                            La actividad física es esencial para mantener a tu mascota sana...
+                        </p>
+                        <button class="btn btn--outline btn--small tip-card__expand" data-tip="tip2">
+                            Leer Más
+                        </button>
+                    </article>
+
+                    <!-- Consejo 3 -->
+                    <article class="tip-card">
+                        <div class="tip-card__icon">🧼</div>
+                        <h3 class="tip-card__title">Higiene Dental</h3>
+                        <p class="tip-card__preview">
+                            La salud dental es crucial para prevenir enfermedades bucales...
+                        </p>
+                        <button class="btn btn--outline btn--small tip-card__expand" data-tip="tip3">
+                            Leer Más
+                        </button>
+                    </article>
+
+                    <!-- Consejo 4 -->
+                    <article class="tip-card">
+                        <div class="tip-card__icon">💊</div>
+                        <h3 class="tip-card__title">Medicinas Preventivas</h3>
+                        <p class="tip-card__preview">
+                            Prevenir es mejor que curar: desparasitantes y vacunas...
+                        </p>
+                        <button class="btn btn--outline btn--small tip-card__expand" data-tip="tip4">
+                            Leer Más
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FAQ SECTION ========== -->
+        <section id="faq" class="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="faq-title" class="section-header__title">Preguntas Frecuentes</h2>
+                    <p class="section-header__subtitle">
+                        Resuelve tus dudas sobre nuestros servicios
+                    </p>
+                </header>
+
+                <div class="faq__accordion">
+                    <!-- Pregunta 1 -->
+                    <article class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span class="faq-item__title">¿Cómo agendo una consulta?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Puedes agendar llamando al +569 8765 4321, enviando un correo a info@petcare.com o completando el formulario de contacto en nuestro sitio. También ofrecemos atención de emergencia 24/7.</p>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 2 -->
+                    <article class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span class="faq-item__title">¿Qué debo llevar en la primera consulta?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Recomendamos llevar: historial médico previo, documentos de vacunación, información sobre comportamiento de tu mascota y una lista de preguntas que tengas. Si es posible, trae muestras de alimento actual.</p>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 3 -->
+                    <article class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span class="faq-item__title">¿Cuáles son las formas de pago?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Aceptamos: efectivo, tarjetas de débito y crédito (todas las principales), transferencia bancaria y billeteras digitales. Consultanos sobre planes de financiamiento para procedimientos mayores.</p>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 4 -->
+                    <article class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span class="faq-item__title">¿Atienden emergencias fuera de horario?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Sí, contamos con atención 24/7 para emergencias. Si tu mascota sufre un accidente o enfermedad repentina, comunícate inmediatamente. El Doctor Figueroa o su equipo estará disponible.</p>
+                        </div>
+                    </article>
+
+                    <!-- Pregunta 5 -->
+                    <article class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span class="faq-item__title">¿Realizan procedimientos para mascotas exóticas?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Sí, nuestro equipo tiene experiencia con mascotas exóticas como aves, roedores, reptiles y más. Recomendamos agendar con anticipación para consultas especializadas.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section id="contacto" class="contact" aria-labelledby="contacto-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="contacto-title" class="section-header__title">Ponte en Contacto</h2>
+                    <p class="section-header__subtitle">
+                        Estamos aquí para responder tus preguntas
+                    </p>
+                </header>
+
+                <div class="contact__grid">
+                    <!-- Información de Contacto -->
+                    <aside class="contact__info">
+                        <article class="contact-item">
+                            <h3 class="contact-item__title">📍 Ubicación</h3>
+                            <p class="contact-item__text">
+                                Avenida Principal 123<br>
+                                Los Valles de Chile
+                            </p>
+                        </article>
+
+                        <!-- Mapa de Ubicación -->
+                        <div class="contact__map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1234567890123!2d-70.64827!3d-33.44889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c54123456789%3A0x123456789abcdef!2sAvenida%20Principal%20123%2C%20Los%20Valles%20de%20Chile!5e0!3m2!1ses!2scl!4v1234567890123!5m2!1ses!2scl"
+                                width="100%"
+                                height="200"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Mapa de ubicación de PetCare">
+                            </iframe>
+                        </div>
+
+                        <article class="contact-item">
+                            <h3 class="contact-item__title">📞 Teléfono</h3>
+                            <p class="contact-item__text">
+                                <a href="tel:+56987654321" class="contact-item__link">+569 8765 4321</a><br>
+                                <span class="contact-item__hours">Disponible 24/7</span>
+                            </p>
+                        </article>
+
+                        <article class="contact-item">
+                            <h3 class="contact-item__title">📧 Email</h3>
+                            <p class="contact-item__text">
+                                <a href="mailto:info@petcare.com" class="contact-item__link">info@petcare.com</a>
+                            </p>
+                        </article>
+
+                        <article class="contact-item">
+                            <h3 class="contact-item__title">🕒 Horarios</h3>
+                            <ul class="contact-item__list">
+                                <li>Lunes - Viernes: 8:00 - 20:00</li>
+                                <li>Sábado: 9:00 - 18:00</li>
+                                <li>Domingo: 10:00 - 16:00</li>
+                                <li><strong>Emergencias: 24/7</strong></li>
+                            </ul>
+                        </article>
+                    </aside>
+
+                    <!-- Formulario de Contacto y Cita -->
+                    <form class="contact__form" aria-labelledby="contacto-title">
+                        <h3 class="contact__form-title">Agendar Cita Online</h3>
+
+                        <div class="form-group">
+                            <label for="form-name" class="form-group__label">Nombre Completo</label>
+                            <input
+                                id="form-name"
+                                type="text"
+                                class="form-group__input"
+                                placeholder="Tu nombre"
+                                required
+                                aria-required="true"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email" class="form-group__label">Email</label>
+                            <input
+                                id="form-email"
+                                type="email"
+                                class="form-group__input"
+                                placeholder="tu@email.com"
+                                required
+                                aria-required="true"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-phone" class="form-group__label">Teléfono</label>
+                            <input
+                                id="form-phone"
+                                type="tel"
+                                class="form-group__input"
+                                placeholder="+569 XXXX XXXX"
+                                required
+                                aria-required="true"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-pet" class="form-group__label">Tipo de Mascota</label>
+                            <select id="form-pet" class="form-group__select" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="dog">Perro</option>
+                                <option value="cat">Gato</option>
+                                <option value="exotic">Exótico</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-service" class="form-group__label">Servicio Requerido</label>
+                            <select id="form-service" class="form-group__select" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="consulta">Consulta General</option>
+                                <option value="cirugia">Cirugía</option>
+                                <option value="odontologia">Odontología</option>
+                                <option value="emergencia">Emergencia</option>
+                                <option value="grooming">Grooming</option>
+                                <option value="vacunacion">Vacunación</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-date" class="form-group__label">Fecha Preferida</label>
+                            <input
+                                id="form-date"
+                                type="date"
+                                class="form-group__input"
+                                min="2024-01-01"
+                                required
+                                aria-required="true"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-time" class="form-group__label">Hora Preferida</label>
+                            <input
+                                id="form-time"
+                                type="time"
+                                class="form-group__input"
+                                required
+                                aria-required="true"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message" class="form-group__label">Comentarios Adicionales</label>
+                            <textarea
+                                id="form-message"
+                                class="form-group__textarea"
+                                placeholder="¿Algo más que debamos saber?"
+                                rows="4"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--large">
+                            Agendar Cita
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Columna 1: Información -->
+                <section class="footer__column">
+                    <h3 class="footer__title">Sobre PetCare</h3>
+                    <p class="footer__text">
+                        Comprometidos con la salud y el bienestar de tus mascotas desde 1998.
+                    </p>
+                </section>
+
+                <!-- Columna 2: Enlaces Rápidos -->
+                <nav class="footer__column" aria-label="Enlaces del sitio">
+                    <h3 class="footer__title">Enlaces</h3>
+                    <ul class="footer__links">
+                        <li><a href="#servicios" class="footer__link">Servicios</a></li>
+                        <li><a href="#equipo" class="footer__link">Equipo</a></li>
+                        <li><a href="#testimonios" class="footer__link">Testimonios</a></li>
+                        <li><a href="#contacto" class="footer__link">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Columna 3: Redes Sociales -->
+                <section class="footer__column">
+                    <h3 class="footer__title">Síguenos</h3>
+                    <ul class="footer__social">
+                        <li>
+                            <a href="#" class="footer__social-link" aria-label="Facebook de PetCare">
+                                f
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__social-link" aria-label="Instagram de PetCare">
+                                📷
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__social-link" aria-label="WhatsApp de PetCare">
+                                💬
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 PetCare Clínica Veterinaria. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</body>
+</html>
